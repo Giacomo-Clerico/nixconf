@@ -7,6 +7,8 @@
     enable = true;
     shellAliases = {
       c = "clear";
+      ll = "ls -a";
+      nrs = "sudo nixos-rebuild switch --flake ~/nixconf#laptop";
     };
     profileExtra = ''
       if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then

@@ -32,6 +32,12 @@
         enableTreesitter = true;
 
         nix.enable = true;
+        python = {
+          enable = true;
+          format.enable = true;
+          lsp.enable = true;
+          treesitter.enable = true;
+        };
       };
     };
   };

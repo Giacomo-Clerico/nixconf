@@ -55,6 +55,7 @@
     kdePackages.dolphin
     pulseaudio
     pavucontrol
+    unzipNLS
   ];
 
   #sound

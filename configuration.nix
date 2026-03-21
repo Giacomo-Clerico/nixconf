@@ -56,7 +56,6 @@
     pulseaudio
     pavucontrol
     unzipNLS
-    xrandr
   ];
 
   #sound

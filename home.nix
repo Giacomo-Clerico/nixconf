@@ -24,6 +24,7 @@
     exercism
     pom
     inputs.zen-browser.packages.x86_64-linux.default
+    vscodium
   ];
   home.file.".config/hypr".source = ./config/hypr;
   home.file.".config/waybar".source = ./config/waybar;

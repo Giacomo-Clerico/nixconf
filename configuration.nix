@@ -56,6 +56,8 @@
     pulseaudio
     pavucontrol
     unzipNLS
+
+    spotify
   ];
 
   #sound

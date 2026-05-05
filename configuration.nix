@@ -30,6 +30,8 @@
     ];
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   programs.firefox.enable = true;
   
   systemd.settings.Manager = {

@@ -14,7 +14,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, nvf, zen-browser, ... }: {
+  outputs = { nixpkgs, home-manager, nvf, zen-browser, ... } @ inputs : {
     
     nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -28,7 +28,8 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.jeco = import ./home.nix;
-            backupFileExtension = "backup";  
+            backupFileExtension = "backup";
+            extraSpecialArgs = { inherit inputs; };
           };
         }
       ];

@@ -23,6 +23,7 @@
     btop
     exercism
     pom
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
   home.file.".config/hypr".source = ./config/hypr;
   home.file.".config/waybar".source = ./config/waybar;
